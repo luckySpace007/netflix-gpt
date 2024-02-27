@@ -3,7 +3,9 @@
 - Configured Tailwind Css
 - Header
 - Login Form
-- Sign Up
+- Sign Up Form
+- Form Validation
+- useRef Hook
 
 
 # Features
