@@ -11,7 +11,9 @@
 - Create Sign Up user Account Authentication
 - Implementat Sign in User API
 - Created Redux store
-
+- Implemented Sign Out
+- Update Profile
+- Fetch form TMDB Movies
 
 
 # Features
