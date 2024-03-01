@@ -3,13 +3,11 @@ import Header from './Header'
 import {createUserWithEmailAndPassword , signInWithEmailAndPassword , updateProfile} from "firebase/auth";
 import { checkValidateData } from '../utils/validate';
 import { auth } from '../utils/firebase'
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
 const Login = () => {
   const [isSignInForm,setIsSignInForm] = useState(true);
   const [errorMessage,setErrorMessage] = useState(null);
-  const navigate = useNavigate();
   
   const email = useRef(null);
   const password = useRef(null);
@@ -20,8 +18,6 @@ const Login = () => {
     // Validate The Form Data
     checkValidateData(email,password)
 
-    console.log(email.current.value);
-    console.log(password.current.value);
 
     const message = checkValidateData(email.current.value,password.current.value);
     setErrorMessage(message);
@@ -52,7 +48,6 @@ const Login = () => {
             photoURL : photoURL
           })
         );
-          navigate("/browse")
         }).catch((error) => {
           console.log(error)
         });
@@ -62,7 +57,7 @@ const Login = () => {
         const errorCode = error.code;
         const errorMessage = error.message;
         setErrorMessage(errorCode + "-" + errorMessage);
-        // ..
+        
       });
     }
 
@@ -72,8 +67,8 @@ const Login = () => {
       .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
-      console.log(user);
-      navigate("/browse")
+    
+      
       }) 
       .catch((error) => {
         const errorCode = error.code;
@@ -98,7 +93,7 @@ const toggleSignInForm = () => {
         </div>
         <form 
             className='w-3/12 absolute p-12 bg-black my-36 mx-auto right-8 left-8 text-white 
-            rounded-lg bg-opacity-70'
+            rounded-lg bg-opacity-80'
             onSubmit={(e) => e.preventDefault()}>
             <h1 className='font-bold text-3xl py-2 px-2 mb-4 text-left'>{isSignInForm ? "Sign In " : "Sign Up"}</h1>
             {!isSignInForm && 
