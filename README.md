@@ -30,6 +30,15 @@
 - Make it Autoplay and mute
 - Tailwind classes to look main container look awesome
 - now we will build secondary components
+- build Movie List
+- Build Movie Card
+- TMBD Image CDN URl
+- Made the browser page amazing with Tailwind css
+- useNowPlaying Custom Hooks
+- usePopularMovies Custom Hooks
+- useUpcomingMovies Custom Hooks
+- useTopRatedCustom Hooks
+
 
 # Features
 - Login / Sign Up
