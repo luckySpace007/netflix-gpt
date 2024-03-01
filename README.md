@@ -29,7 +29,7 @@
 - Embedded the youtube video
 - Make it Autoplay and mute
 - Tailwind classes to look main container look awesome
-
+- now we will build secondary components
 
 # Features
 - Login / Sign Up
