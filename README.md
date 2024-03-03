@@ -38,7 +38,10 @@
 - usePopularMovies Custom Hooks
 - useUpcomingMovies Custom Hooks
 - useTopRatedCustom Hooks
-
+- GPT Search Bar
+- GPT Search Page
+- (⭐) Multi language feature in our app
+![alt text](image.png)
 
 # Features
 - Login / Sign Up
