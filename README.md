@@ -40,7 +40,17 @@
 - useTopRatedCustom Hooks
 - GPT Search Bar
 - GPT Search Page
--(⭐) Multi language feature in our app
+- (BONUS) Multi-language feature in our app
+- Get open ai api key
+- gpt search api call
+- fetched gptMovieSuggestions from TMDB
+- created gptSlice added data
+- Reused Movie list component to make movie suggestion container
+- Memoization
+- Added .env file 
+- adding .env file to gitignore
+- Made our site Responsive
+-(⭐) Multi language feature in our app 
 ![alt text](image.png)
 
 # Features
