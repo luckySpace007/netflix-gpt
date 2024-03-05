@@ -57,9 +57,9 @@ function Header() {
    }
 
   return (
-    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
+    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row md:justify-between'>
       <img 
-        className='w-44 cursor-pointer'
+        className='w-44 mx-auto md:mx-0'
         src={LOGO} 
         alt="logo" 
         onClick={linkNavigate}
